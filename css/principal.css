@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+nav.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  background: linear-gradient(135deg, #333333, #555555);
+  z-index: 1100;
+}
+
+nav .logo img {
+  height: 80px;
+  width: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  font-weight: 600; 
+  text-decoration: none;
+  transition: color 0.3s;
+  padding: 10px 0;
+}
+
+nav ul li a:hover {
+  color: #aaa;
+}
+
+.user-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer; 
+}
+
+.user-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  min-width: 120px;
+}
+
+.content {
+  padding: 100px 20px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 150px;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.texto {
+  flex: 1;
+}
+
+.texto h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.texto p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 12px 25px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.imagem {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.imagem img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .texto,
+  .imagem {
+    width: 100%;
+    flex: none; 
+  }
+
+  .texto h1 {
+    font-size: 2rem;
+  }
+}
+
+.rodape {
+  background: linear-gradient(135deg, #333333, #555555);
+  color: white;
+  padding: 40px 20px;
+  font-size: 0.95rem;
+}
+
+.rodape-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.rodape-logo img {
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.rodape-logo p {
+  margin: 0;
+  font-weight: 400;
+}
+
+.rodape-links h4,
+.rodape-social h4 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.rodape-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.rodape-links ul li {
+  margin-bottom: 8px;
+}
+
+.rodape-links ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.rodape-links ul li a:hover {
+  color: #aaa;
+}
+
+.social-icons a {
+  font-size: 32px; 
+  margin-right: 20px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a.twitter {
+  color: #1DA1F2; 
+}
+
+.social-icons a.instagram {
+  color: #E1306C;
+}
+
+.social-icons a.facebook {
+  color: #1877F2; 
+}
+
+.social-icons a:hover {
+  transform: scale(1.2); 
+}
+
+
+@media (max-width: 768px) {
+  .rodape-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .rodape-logo,
+  .rodape-links,
+  .rodape-social {
+    width: 100%;
+  }
+
+  .social-icons a {
+    margin: 0 8px;
+  }
+}
+

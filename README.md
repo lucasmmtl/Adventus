@@ -1,11 +1,7 @@
-🌐 SocialNet – Rede Social em HTML e CSS
+🌐 Adventus – Rede Social em HTML e CSS
 
 Este é um projeto de rede social fictícia desenvolvida utilizando apenas HTML5 e CSS3.
 O objetivo é praticar a estruturação de páginas, organização de estilos e simular a interface de uma rede social.
-
-📸 Demonstração
-
-(Coloque aqui uma captura de tela ou GIF do site, se tiver)
 
 🛠️ Tecnologias Utilizadas
 
@@ -14,14 +10,35 @@ HTML5 → Estrutura do site
 CSS3 → Estilização e layout responsivo
 
 📂 Estrutura de Pastas
-/
-├── index.html          # Página inicial (feed da rede social)
-├── login.html          # Página de login
-├── perfil.html         # Página de perfil do usuário
+adventus/
+│
+├── index.html # Página inicial (Home)
+├── faq.html # Central de ajuda (FAQ)
+├── contato.html # Página de contato
+├── login.html # Página de login
+│
 ├── css/
-│   └── style.css       # Estilos principais
-└── img/
-    └── ...             # Imagens do projeto
+│ ├── style.css # Estilos globais
+│ ├── home.css # Estilos específicos da Home
+│ ├── faq.css # Estilos específicos do FAQ
+│ ├── contato.css # Estilos específicos do Contato
+│ └── login.css # Estilos específicos do Login
+│
+├── js/
+│ ├── main.js # Scripts globais
+│ ├── home.js # Scripts da Home (slider, animações)
+│ ├── faq.js # Scripts do FAQ (accordion, busca, contador)
+│ ├── contato.js # Scripts do Contato
+│ └── login.js # Scripts do Login (validações no front)
+│
+├── img/
+│ ├── logo.png # Logo do site
+│ ├── hero-bg.jpg # Imagem da seção hero
+│ ├── depoimentos/ # Pasta para imagens dos depoimentos
+│ └── icones/ # Ícones em geral
+│
+└── assets/
+└── libs/ # Bibliotecas externas (AOS, Swiper, etc)
 
 ⚙️ Funcionalidades
 
@@ -37,8 +54,7 @@ Layout responsivo, adaptando para desktop e mobile
 
 Baixe ou clone este repositório:
 
-git clone https://github.com/seu-usuario/socialnet.git
-
+git clone https://github.com/seu-usuario/Adventus.git
 
 Abra o arquivo index.html no navegador.
 
