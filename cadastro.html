@@ -1,33 +1,106 @@
 <!DOCTYPE html>
-<html lang="ept-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/login.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <title>Cadastro</title>
-</head>
-<body>
-    <div class="container">
-        <header class="Login">
-            <img src="img/usuario.png" alt="imagem do usuário">
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="img/Adventus-Logo.png" />
+    <title>Adventus - Cadastro</title>
+  </head>
+  <body>
+    <main class="login-container">
+      <div class="login-card">
+        <header class="login-header">
+          <img src="img/Adventus.png" alt="Logo Adventus" class="logo" />
+          <h1>Criar conta</h1>
+          <p>Junte-se à comunidade de desenvolvedores</p>
         </header>
 
-        <div class="Fields">
-            <p>Cadastre seu usuario ou e-mail</p>
-            <input type="tex]" id="username">
+        <form class="login-form" novalidate>
+          <div class="form-group">
+            <label for="fullname">Nome completo</label>
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              placeholder="Digite seu nome completo"
+              required
+              autocomplete="name"
+            />
+          </div>
 
-            <p>Cadastre sua senha</p>
-            <input type="password" id="password">
-   
-            <button id="cadastroBtn" >Criar Conta</button>
-            
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Digite seu email"
+              required
+              autocomplete="email"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="username">Nome de usuário</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Escolha um nome de usuário"
+              required
+              autocomplete="username"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Senha</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Crie uma senha segura"
+              required
+              autocomplete="new-password"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="confirm-password">Confirmar senha</label>
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              placeholder="Confirme sua senha"
+              required
+              autocomplete="new-password"
+            />
+          </div>
+
+          <div class="form-options">
+            <label class="checkbox-container">
+              <input type="checkbox" id="terms" name="terms" required />
+              <span class="checkmark"></span>
+              Aceito os <a href="#" class="forgot-password">termos de uso</a>
+            </label>
+          </div>
+
+          <button type="submit" id="cadastroBtn" class="login-btn">
+            Criar conta
+          </button>
+        </form>
+
+        <div class="signup-link">
+          <p>Já tem uma conta? <a href="index.html">Fazer login</a></p>
         </div>
-           <script src="js/cadastro.js">
-           </script>
-           
-</body>
+      </div>
+    </main>
+    <script src="js/cadastro.js"></script>
+  </body>
 </html>
-    </div>
