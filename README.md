@@ -1,5 +1,7 @@
 # 🌐 Adventus – Rede Social para Desenvolvedores
 
+Developed by Lucas Matheus Matos de Lima, Felipe Gabriel Loose, Victor Macedo Cruz Belo.
+
 Uma rede social moderna e profissional desenvolvida para conectar desenvolvedores, programadores e entusiastas da tecnologia. O projeto utiliza HTML5, CSS3 e JavaScript vanilla com foco em design responsivo e experiência do usuário.
 
 ## 🎯 Objetivo
