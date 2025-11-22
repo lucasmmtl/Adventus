@@ -4,12 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/principal.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
+
     <link rel="icon" href="img/Adventus-Logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,36 +20,19 @@
   </head>
 
   <body>
-    <nav class="menu">
-      <div class="logo">
-        <a href="principal.html">
-          <img src="img/Adventus.png" alt="Adventus - Página inicial" />
-        </a>
-      </div>
-      <ul>
-        <li><a href="principal.html">Início</a></li>
-        <li><a href="principal.html#sobre">Sobre</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
-      <div class="dropdown">
-        <button
-          class="btn dropdown-toggle user-btn"
-          type="button"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >
-          <img src="img/usuario.png" alt="Menu do usuário" class="user-img" />
-        </button>
-        <ul class="dropdown-menu dropdown-menu-end">
-          <li><a class="dropdown-item" href="#perfil">Meu Perfil</a></li>
-          <li>
-            <a class="dropdown-item" href="#configuracoes">Configurações</a>
-          </li>
-          <li><hr class="dropdown-divider" /></li>
-          <li><a class="dropdown-item" href="index.html">Sair</a></li>
-        </ul>
-      </div>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="img/Adventus.png" alt="Adventus">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="index.html#sobre">Sobre</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+            <a href="login.html" class="cta-btn">Entrar</a>
+        </div>
     </nav>
 
     <main>
@@ -194,56 +172,36 @@
       </div>
     </main>
 
-    <footer class="rodape">
-      <div class="rodape-container">
-        <div class="rodape-logo">
-          <img src="img/Adventus-Logo.png" alt="Logo Adventus" />
-          <p>Adventus © 2025. Todos os direitos reservados.</p>
-          <p>Conectando desenvolvedores ao redor do mundo.</p>
-        </div>
-
-        <div class="rodape-links">
-          <h4>Links Úteis</h4>
-          <ul>
-            <li><a href="#politica">Política de Privacidade</a></li>
-            <li><a href="#termos">Termos de Uso</a></li>
-            <li><a href="contato.html">Contato</a></li>
-            <li><a href="#ajuda">Central de Ajuda</a></li>
-          </ul>
-        </div>
-
-        <div class="rodape-social">
-          <h4>Redes Sociais</h4>
-          <div class="social-icons">
-            <a
-              href="https://facebook.com/Adventus"
-              target="_blank"
-              class="facebook"
-              aria-label="Facebook"
-            >
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a
-              href="https://twitter.com/Adventus"
-              target="_blank"
-              class="twitter"
-              aria-label="Twitter"
-            >
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a
-              href="https://instagram.com/Adventus"
-              target="_blank"
-              class="instagram"
-              aria-label="Instagram"
-            >
-              <i class="fab fa-instagram"></i>
-            </a>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="img/Adventus-Logo.png" alt="Adventus">
+            <p>Conectando desenvolvedores ao redor do mundo</p>
           </div>
+          <div class="footer-links">
+            <h4>Links</h4>
+            <ul>
+              <li><a href="index.html">Início</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="contato.html">Contato</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <h4>Redes Sociais</h4>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Adventus. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
   </body>
 </html>
