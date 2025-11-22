@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if(username === '' || password === '') {
             alert('Por favor, preencha todos os campos.');
         } else {
-            window.location.href = 'principal.html';
+            window.location.href = 'index.html';
         }
     });
 });

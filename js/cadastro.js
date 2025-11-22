@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setTimeout(() => {
       alert("Conta criada com sucesso!");
-      window.location.href = "principal.html";
+      window.location.href = "index.html";
     }, 1000);
   });
 });

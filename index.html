@@ -1,71 +1,175 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/login.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="img/Adventus-Logo.png" />
-    <title>Adventus - Login</title>
-  </head>
-  <body>
-    <main class="login-container">
-      <div class="login-card">
-        <header class="login-header">
-          <img src="img/Adventus.png" alt="Logo Adventus" class="logo" />
-          <h1>Bem-vindo de volta</h1>
-          <p>Entre na sua conta para continuar</p>
-        </header>
-
-        <form class="login-form" novalidate>
-          <div class="form-group">
-            <label for="username">Email ou usuário</label>
-            <input
-              type="text"
-              id="username"
-              name="username"
-              placeholder="Digite seu email ou usuário"
-              required
-              autocomplete="username"
-            />
-          </div>
-
-          <div class="form-group">
-            <label for="password">Senha</label>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              placeholder="Digite sua senha"
-              required
-              autocomplete="current-password"
-            />
-          </div>
-
-          <div class="form-options">
-            <label class="checkbox-container">
-              <input type="checkbox" id="remember" name="remember" />
-              <span class="checkmark"></span>
-              Lembrar de mim
-            </label>
-            <a href="#" class="forgot-password">Esqueceu a senha?</a>
-          </div>
-
-          <button type="submit" id="loginBtn" class="login-btn">Entrar</button>
-        </form>
-
-        <div class="signup-link">
-          <p>
-            Ainda não tem uma conta? <a href="cadastro.html">Criar conta</a>
-          </p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/principal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="img/Adventus-Logo.png">
+    <title>Adventus - Rede Social para Desenvolvedores</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="img/Adventus.png" alt="Adventus">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+            <a href="login.html" class="cta-btn">Entrar</a>
         </div>
-      </div>
-    </main>
-    <script src="js/login.js"></script>
-  </body>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content fade-in">
+            <h1>Conecte-se com desenvolvedores ao redor do mundo</h1>
+            <p>A rede social feita especialmente para programadores, desenvolvedores e entusiastas da tecnologia. Compartilhe conhecimento, aprenda e cresça junto com a comunidade.</p>
+            <div class="hero-buttons">
+                <a href="login.html" class="btn-primary">Começar Agora</a>
+                <a href="#sobre" class="btn-secondary">Saiba Mais</a>
+            </div>
+        </div>
+        <div class="hero-image fade-in">
+            <img src="img/Hand coding.gif" alt="Desenvolvedor programando">
+        </div>
+    </section>
+
+    <section id="sobre" class="about-section">
+        <div class="container">
+            <div class="section-header slide-up">
+                <h2>Para quem foi feita esta rede social?</h2>
+                <p>O Adventus foi criado pensando em todos os profissionais e entusiastas do mundo tech</p>
+            </div>
+            <div class="target-grid">
+                <div class="target-card slide-up">
+                    <i class="fas fa-code"></i>
+                    <h3>Desenvolvedores</h3>
+                    <p>Frontend, Backend, Fullstack - conecte-se com outros devs e compartilhe experiências</p>
+                </div>
+                <div class="target-card slide-up">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Estudantes</h3>
+                    <p>Aprendendo programação? Encontre mentores e colegas para estudar junto</p>
+                </div>
+                <div class="target-card slide-up">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Profissionais de TI</h3>
+                    <p>Analistas, arquitetos, gerentes - networking profissional na área tech</p>
+                </div>
+                <div class="target-card slide-up">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Empreendedores Tech</h3>
+                    <p>Startups, founders e inovadores - encontre parceiros e investidores</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header slide-up">
+                <h2>O que dizem sobre o Adventus</h2>
+                <p>Depoimentos de desenvolvedores que já fazem parte da nossa comunidade</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-track">
+                    <div class="testimonial-card active">
+                        <div class="testimonial-content">
+                            <p>"O Adventus mudou minha carreira. Encontrei mentores incríveis e oportunidades que nunca imaginei."</p>
+                            <div class="testimonial-author">
+                                <img src="img/usuario.png" alt="Ana Silva">
+                                <div>
+                                    <h4>Ana Silva</h4>
+                                    <span>Frontend Developer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Comunidade incrível! Sempre encontro ajuda para resolver problemas complexos de programação."</p>
+                            <div class="testimonial-author">
+                                <img src="img/usuario.png" alt="Carlos Santos">
+                                <div>
+                                    <h4>Carlos Santos</h4>
+                                    <span>Backend Developer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Plataforma perfeita para networking. Consegui meu emprego atual através de conexões do Adventus."</p>
+                            <div class="testimonial-author">
+                                <img src="img/usuario.png" alt="Maria Costa">
+                                <div>
+                                    <h4>Maria Costa</h4>
+                                    <span>Fullstack Developer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="slider-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content slide-up">
+                <h2>Pronto para fazer parte da comunidade?</h2>
+                <p>Junte-se a milhares de desenvolvedores e comece a construir sua rede profissional hoje mesmo.</p>
+                <a href="login.html" class="btn-primary large">Criar Conta Gratuita</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="img/Adventus-Logo.png" alt="Adventus">
+                    <p>Conectando desenvolvedores ao redor do mundo</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Adventus. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/principal.js"></script>
+</body>
 </html>
